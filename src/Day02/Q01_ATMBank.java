@@ -38,10 +38,15 @@ Sifre değiştirme işleminde mevcut şifreyi teyit ettikten sonra, sifre deği�
 
 
         System.out.print("KART NUMARASI GİRİNİZ: ");
+
         String kKartNo = scan.nextLine().replace(" ", "");
+
         System.out.print("ŞİFRE GİRİNİZ: ");
+
         String kSifre = scan.next();
+
         if (kKartNo.equals(kartNo) && kSifre.equals(sifre)) { // kKartNo==kartNo---> BU ŞRKİLDE STRİNG İFADELERİ KARŞILAŞTIRMAK İSTERSEK, BU İFADELERİN
+
             //REFERANS DEĞERLERİNİ KARŞILAŞTIRMIŞ OLURUZ..
             menu();
         }else {
@@ -66,27 +71,39 @@ Sifre değiştirme işleminde mevcut şifreyi teyit ettikten sonra, sifre deği�
                 "4. PARA GONDERME\n" +
                 "5. ŞİFRE DEĞİŞTİRME\n" +
                 "6. ÇIKIŞ");
+
         int secim = scan.nextInt();//char //String
+
         switch (secim) {
+
             case 1: {
+
                 bakiyeSorgula();
+
             } //case '1'  // "1"
+
             case 2: {
+
                 System.out.print("YATIRALACAK MİKTARI GİRİNİZ: ");
                 //double miktar=scan.nextDouble();
                 paraYatirma(scan.nextDouble());//paraYatirma(miktar);
             }
             case 3: {
+
                 paraCekme();
             }
             case 4: {
+
                 paraGonderme();
             }
             case 5: {
+
                 sifreDegistirme();
             }
             case 6: {
+
                 System.out.println("BİZİ SEÇTİĞİNİZ İÇİN TEŞEKKÜRLER...");
+
                 System.exit(0); // DERLEYİCİ BU SATIRA GELDİĞİNDE ÇALIŞMAYI BİTİRİR...
             }
         }
