@@ -1,9 +1,10 @@
+package Day01;
+
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 import java.util.Scanner;
 
-public class Q01 {
+public class Q01_DesimalBinaryCevirme {
 
 
 
